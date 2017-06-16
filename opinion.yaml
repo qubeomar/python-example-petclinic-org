@@ -36,7 +36,6 @@ graph:
   build:
     has:
       - compile
-      - unittest
     on_error:
       - notify
     next: bake
