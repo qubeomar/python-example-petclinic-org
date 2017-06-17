@@ -1,5 +1,5 @@
 FROM python:3.5
-ADD dist/pypet-0.0.0-py3-none-any.whl  .
+# ADD dist/pypet-0.0.0-py3-none-any.whl  .
 ADD requirements.txt .
 
 
