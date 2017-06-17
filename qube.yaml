@@ -22,7 +22,7 @@ build:
     publish:
      - dist/
 build:
-  skip: true
+  skip: false
 bake:
   skip: false
 test:
