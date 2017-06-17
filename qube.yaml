@@ -21,6 +21,8 @@ build:
   compile:
     publish:
      - dist/
+build:
+  skip: true
 bake:
   skip: false
 test:
