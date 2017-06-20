@@ -36,7 +36,7 @@ deploy_to_prod:
     - target
     - target/surefire-reports/index.html
     args:
-    - seleniumGridUrl=http://10.137.175.76:4444
+    - http://10.137.175.76:4444/wd/hub
     - http://myjavahost/static/home.html
     execute_outside_toolchain: false
 ports: 
