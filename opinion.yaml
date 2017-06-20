@@ -96,7 +96,7 @@ vertices:
     execute_outside_toolchain: false
   wait_for_service_ready:
     action:
-      - "echo wait"
+      - "echo 'sleeping for 300s' && sleep 300 &&  echo 'awake now continue'"
   release_to_prod:
     action:
       - "qube_utils/deployment_templates/k8s/qube_deploy_k8s.sh $14/$1:$2 $3 $4 $5-deployment /tmp/deployment/$6 $7 $8 $9 $10 $11 $12 $13"
