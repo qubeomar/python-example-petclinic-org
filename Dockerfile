@@ -20,6 +20,6 @@ RUN pip install uwsgi
 # install Consul CLI tool
 RUN apt-get update && apt-get install -y jq unzip
 
-ADD scripts/run_ui_func_test.sh .
+ADD scripts/run_ui_func_test.sh /usr/bin
 ADD scripts/startup.sh .
 CMD ["./startup.sh"]
