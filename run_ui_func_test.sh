@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export PYTHONPATH=/usr/local/lib/python3.5:/usr/local/lib/python3.5/site-packages
 
