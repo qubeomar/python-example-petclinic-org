@@ -1,6 +1,6 @@
 from flask import Flask, session
 
-from config import DevConfig
+from petclinic.config import DevConfig
 
 from flask import url_for, request
 import jinja2
