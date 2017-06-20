@@ -33,6 +33,7 @@ deploy_to_prod:
   skip: false
   functional_test:
     actions:
+    - pip install -r requirements.txt
     - /home/app/run_ui_func_test.sh
     publish:
     - target
