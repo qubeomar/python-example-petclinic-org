@@ -36,7 +36,7 @@ deploy_to_prod:
     - pip install -r requirements.txt
     - /home/app/run_ui_func_test.sh http://10.137.175.76:4444/wd/hub http://myjavahost/static/home.html
     publish:
-    - dist/
+    - dist/PyPetUITestReport.html
     execute_outside_toolchain: false
 ports: 
   container_ports:

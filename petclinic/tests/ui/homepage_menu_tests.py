@@ -53,7 +53,7 @@ if __name__ == "__main__":
     HomePageMenuLinkTests.SELENIUM_SERVER_URL = sys.argv[1]
     HomePageMenuLinkTests.TARGET_PAGE_URL = sys.argv[2]
     suite = unittest.TestLoader().loadTestsFromTestCase(HomePageMenuLinkTests)
-    outfile = open('dist' + "/SmokeTestReport.html", "w")
+    outfile = open('dist' + "/PyPetUITestReport.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(stream=outfile, title = 'PyPet Test Report', description = 'UI selenium test')
     runner.run(suite)
     #unittest.TextTestRunner(verbosity=2).run(suite)
