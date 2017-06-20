@@ -3,7 +3,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-import HTMLTestRunner
+from petclinic.tests.ui import HTMLTestRunner
 
 
 class HomePageMenuLinkTests(unittest.TestCase):
