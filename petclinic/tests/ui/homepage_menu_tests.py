@@ -11,9 +11,9 @@ class HomePageMenuLinkTests(unittest.TestCase):
     
     def setUp(self):
         self.driver = webdriver.Remote(
-            command_executor=SELENIUM_SERVER_URL,
+            command_executor=HomePageMenuLinkTests.SELENIUM_SERVER_URL,
             desired_capabilities= DesiredCapabilities.FIREFOX)
-        self.driver.get(TARGET_PAGE_URL)
+        self.driver.get(HomePageMenuLinkTests.TARGET_PAGE_URL)
 
 
     def test_about_menu_link(self):
