@@ -34,13 +34,9 @@ deploy_to_prod:
   functional_test:
     actions:
     - pip install -r requirements.txt
-    - /home/app/run_ui_func_test.sh
+    - /home/app/run_ui_func_test.sh http://10.137.175.76:4444/wd/hub http://myjavahost/static/home.html
     publish:
-    - target
-    - target/surefire-reports/index.html
-    args:
-    - http://10.137.175.76:4444/wd/hub
-    - http://myjavahost/static/home.html
+    - dist/
     execute_outside_toolchain: false
 ports: 
   container_ports:
