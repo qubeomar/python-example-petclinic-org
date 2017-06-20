@@ -1,5 +1,5 @@
 FROM python:3.5
-ADD dist/pypet-0.0.0-py3-none-any.whl .
+# ADD dist/pypet-0.0.0-py3-none-any.whl .
 
 ADD requirements.txt .
 RUN pip install -r requirements.txt
@@ -14,7 +14,7 @@ ADD petclinic/static/js /usr/local/lib/python3.5/site-packages/petclinic/static/
 #ADD requirements.txt
 #RUN pip install -r requirements.txt
 
-RUN pip install pypet-0.0.0-py3-none-any.whl 
+# RUN pip install pypet-0.0.0-py3-none-any.whl 
 RUN pip install uwsgi
 
 # install Consul CLI tool
