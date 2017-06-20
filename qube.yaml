@@ -33,8 +33,6 @@ deploy_to_prod:
   skip: false
   functional_test:
     actions:
-    - ls
-    - pwd
     - /home/app/run_ui_func_test.sh
     publish:
     - target
