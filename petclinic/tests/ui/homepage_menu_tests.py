@@ -3,6 +3,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+import HTMLTestRunner
 
 
 class HomePageMenuLinkTests(unittest.TestCase):
@@ -52,4 +53,7 @@ if __name__ == "__main__":
     HomePageMenuLinkTests.SELENIUM_SERVER_URL = sys.argv[1]
     HomePageMenuLinkTests.TARGET_PAGE_URL = sys.argv[2]
     suite = unittest.TestLoader().loadTestsFromTestCase(HomePageMenuLinkTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    outfile = open('dist' + "/SmokeTestReport.html", "w")
+    runner = HTMLTestRunner.HTMLTestRunner(stream=outfile, title = 'PyPet Test Report', description = 'UI selenium test')
+    runner.run(suite)
+    #unittest.TextTestRunner(verbosity=2).run(suite)
