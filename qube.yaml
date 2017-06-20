@@ -31,6 +31,14 @@ deploy_to_qa:
   skip: true
 deploy_to_prod:
   skip: false
+  functional_test:
+    publish:
+    - target
+    - target/surefire-reports/index.html
+    args:
+    - seleniumGridUrl=http://192.168.99.101:32768/wd/hub
+    - http://myjavahost/static/home.html
+    execute_outside_toolchain: false
 ports: 
   container_ports:
     - containerPort: 8443
