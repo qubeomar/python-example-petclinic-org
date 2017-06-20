@@ -49,7 +49,7 @@ class HomePageMenuLinkTests(unittest.TestCase):
         self.driver.close()
         
 if __name__ == "__main__":
-    HomePageMenuLinkTests.SELENIUM_SERVER_URL = sys.argv.pop()
-    HomePageMenuLinkTests.TARGET_PAGE_URL = sys.argv.pop()
+    HomePageMenuLinkTests.SELENIUM_SERVER_URL = sys.argv[1]
+    HomePageMenuLinkTests.TARGET_PAGE_URL = sys.argv[2]
     suite = unittest.TestLoader().loadTestsFromTestCase(HomePageMenuLinkTests)
     unittest.TextTestRunner(verbosity=2).run(suite)
