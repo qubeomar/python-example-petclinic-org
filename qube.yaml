@@ -34,7 +34,8 @@ deploy_to_prod:
   functional_test:
     actions:
     - ls
-    - $PWD/run_ui_func_test.sh
+    - pwd
+    - $(pwd)/run_ui_func_test.sh
     publish:
     - target
     - target/surefire-reports/index.html
