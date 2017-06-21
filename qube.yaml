@@ -32,6 +32,8 @@ deploy_to_qa:
 deploy_to_prod:
   skip: false
   functional_test:
+    actions:
+    - ls
     publish:
     - target
     - target/surefire-reports/index.html
